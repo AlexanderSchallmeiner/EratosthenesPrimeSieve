@@ -9,6 +9,9 @@ package j.eratosthenesprimesieve;
  *
  * @author alexa
  */
-public class PrimeSieve {
+public interface PrimeSieve {
+     
+    public boolean isPrime(int p);
+    public void printPrimes();
     
 }

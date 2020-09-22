@@ -5,6 +5,8 @@
  */
 package j.eratosthenesprimesieve;
 
+import java.util.Scanner;
+
 /**
  *
  * @author alexa
@@ -27,6 +29,9 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
 
     @Override
     public void printPrimes() {
+        System.out.println("Geben sie die Obergrenze ein");
+       Scanner scanner = new Scanner(System.in);
+        int obergränze = scanner.nextInt();
         
     }
     
