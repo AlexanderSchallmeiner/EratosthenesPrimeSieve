@@ -9,6 +9,25 @@ package j.eratosthenesprimesieve;
  *
  * @author alexa
  */
-public class EratosthenesPrimeSieve {
+public class EratosthenesPrimeSieve implements PrimeSieve {
+
+    @Override
+    public boolean isPrime(int p) {
+        
+        int sqrt = (int) Math.sqrt(p) + 1;
+        for (int i = 2; i < sqrt; i++)
+        { if (p % i == 0) {  
+            return false; 
+        
+        } } return true;
+
+
+      
+    }
+
+    @Override
+    public void printPrimes() {
+        
+    }
     
 }
