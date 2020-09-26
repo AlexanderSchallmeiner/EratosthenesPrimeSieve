@@ -5,6 +5,7 @@
  */
 package j.eratosthenesprimesieve;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -13,6 +14,27 @@ import java.util.Scanner;
  */
 public class EratosthenesPrimeSieve implements PrimeSieve {
 
+    public ArrayList<Integer> Algo(int Obergraenze){
+        ArrayList<Integer> primes = new ArrayList<Integer>();
+        boolean[] isPrime = new boolean[Obergraenze];
+        for(int i =2; i<Obergraenze;i++){
+            isPrime[i] = true;
+            }
+        
+        for(int i = 2; i<Obergraenze; i++){
+            if(isPrime[i]){
+                primes.add(i);
+                
+                for(int j = i*i; j<Obergraenze; j+=i){
+                    isPrime[j] = false;
+                    
+                }
+            }
+        }
+        return primes;
+        
+    }
+    
     @Override
     public boolean isPrime(int p) {
         
@@ -33,6 +55,10 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
        Scanner scanner = new Scanner(System.in);
         int obergränze = scanner.nextInt();
         
+      
+        
     }
+    
+    
     
 }
