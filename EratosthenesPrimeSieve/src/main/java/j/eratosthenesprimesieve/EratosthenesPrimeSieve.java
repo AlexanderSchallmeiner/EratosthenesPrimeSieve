@@ -13,7 +13,16 @@ import java.util.Scanner;
  * @author alexa
  */
 public class EratosthenesPrimeSieve implements PrimeSieve {
+int max;
+    public EratosthenesPrimeSieve(int n) {
+       this.max = n;
+        
+      this.printPrimes();
+        
+    }
 
+    
+    
     public ArrayList<Integer> Algo(int Obergraenze){
         ArrayList<Integer> primes = new ArrayList<Integer>();
         boolean[] isPrime = new boolean[Obergraenze];
@@ -51,9 +60,8 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
 
     @Override
     public void printPrimes() {
-        System.out.println("Geben sie die Obergrenze ein");
-       Scanner scanner = new Scanner(System.in);
-        int obergränze = scanner.nextInt();
+        
+        System.out.println(this.Algo(max));
         
       
         
