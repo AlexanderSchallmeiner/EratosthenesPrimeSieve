@@ -13,7 +13,8 @@ import java.util.Scanner;
  * @author alexa
  */
 public class EratosthenesPrimeSieve implements PrimeSieve {
-int max;
+    int max;
+    
     public EratosthenesPrimeSieve(int n) {
        this.max = n;
         
@@ -64,6 +65,30 @@ int max;
         System.out.println(this.Algo(max));
         
       
+        
+    }
+    
+    public  void zweitesBeispiel(int n){
+        
+        int sum =  0;
+        int prim2 = 0;
+        int prim3 =0;
+        for(int i = 4;i<=n;i+=2){
+           
+           for(int j = 2; j<=i;j++){
+              
+                if(this.isPrime(j)){
+                  prim2 =j;
+                 sum= i-j;
+                if(this.isPrime(sum)){
+                prim3 =sum;
+                break;
+                }
+            }
+           }
+            
+              System.out.println( i + "summe:" + i + "=" + prim2 + " + " + prim3 );
+        }
         
     }
     
