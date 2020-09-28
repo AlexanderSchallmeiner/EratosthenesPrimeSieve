@@ -82,7 +82,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
                  sum= i-j;
                 if(this.isPrime(sum)){
                 prim3 =sum;
-                break;
+                
                 }
             }
            }
