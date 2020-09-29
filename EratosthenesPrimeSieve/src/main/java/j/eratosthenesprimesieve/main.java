@@ -10,11 +10,11 @@ package j.eratosthenesprimesieve;
  * @author alexa
  */
 public class main {
-   static EratosthenesPrimeSieve seib = new EratosthenesPrimeSieve(10);
+   static EratosthenesPrimeSieve seib = new EratosthenesPrimeSieve(20);
     
     
      public static void main(String[] args){
-         seib.zweitesBeispiel(12);
+         seib.zweitesBeispiel(18);
        
      }
 }

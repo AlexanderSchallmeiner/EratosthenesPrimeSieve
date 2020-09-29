@@ -33,6 +33,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
         
         for(int i = 2; i<Obergraenze; i++){
             if(isPrime[i]){
+                
                 primes.add(i);
                 
                 for(int j = i*i; j<Obergraenze; j+=i){
